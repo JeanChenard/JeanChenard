@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+		<title>Second Assignment</title>
+		<!-- The style tag is used to create different CSS attributes, in this case to create a border. -->
+		<!-- Using the table tag and its subheadings th and td you can create a border for a table. px stands for the pixel size, solid black is the color. -->
+		<style>
+			table, th, td{
+				border: 1 px solid black;
+			}
+			</style>
+</head>
+<body>
+	<h1>Assignment 2</h1>
+<!-- The table tag is used to create a table. -->
+<!-- thead is for the headers/main categories or attributes of a table and within a theader you use th tag.
+For the tbody, which is the body of a table and the tfoot which is the footer or the last part of a table, you use the td tag. The tr tag is used in everyone of those categories within a table to break the table into rows. -->
+<section id="main-table" class="main-section">
+	<article>
+<table border="1">
+	<h2>Employee List</h2>
+	<thead>
+	<tr>
+		<th>Id</th>
+		<th>Name</th>
+		<th>email</th>
+	</tr>
+	</thead>
+	<tbody>
+	<tr>
+		<td>1</td>
+		<td>John</td>
+		<td><a href="mailto:john@fakemail.com">john@fakemail.com</a></td>
+	</tr>
+	<tr>
+		<td>2</td>
+		<td>sam</td>
+		<td><a href="mailto:sam@fakemail.com">sam@fakemail.com</a></td>
+	</tr>
+	<tr>
+		<td>1</td>
+		<td>Bob</td>
+		<td><a href="mailto:bob@fakemail.com">bob@fakemail.com</a></td>
+	</tr>
+	<tr>
+		<td>1</td>
+		<td>Jack</td>
+		<td><a href="mailto:jack@fakemail.com">jack@fakemail.com</a></td>
+	</tr>
+	<tr>
+		<td>1</td>
+		<td>rob</td>
+		<td><a href="mailto:Rob@fakemail.com">Rob@fakemail.com</a></td>
+	</tr>
+	</tbody>
+	<tfoot>
+	<tr>
+			<td colspan="3">
+				<!-- colspan is used to make a row span a certain amount of colums instead of breaking out in cells. In this case, the line spans 3 columns, therefore  -->
+			All of the above are Division Heads
+		</td>
+	</tr>
+</tfoot>
+</table>
+</article>
+</section>
+
+<section id="images" class="main-section">
+	<h2>Animals</h2>
+	<article>
+		<figure>
+<img src="img/elephant.jpg" alt="elephant"
+width="300" height="200">
+<figcaption>This is an Elephant.</figcaption>
+</figure>
+
+<figure>
+<img src="img/lion.jpg" alt="lion"
+width="300" height="200">
+<figcaption>This is a lion.</figcaption>
+</figure>
+
+<figure>
+<img src="img/snake.jpg" alt="snake"
+width="300" height="200">
+<figcaption>This is a snake.</figcaption>
+</figure>
+
+<figure>
+<img src="img/whale.jpg" alt="whale"
+width="300" height="200">
+<figcaption>This is a Whale.</figcaption>
+</figure>
+
+<figure>
+<img src="img/hawk.jpg" alt="hawk"
+width="300" height="200">
+<figcaption>This is a Hawk.</figcaption>
+</figure>
+</article>
+</section>
+<!-- To find different entities we refer to lists posted online. Each symbol/entity used here corresponds to a number, and the number differs for each of them. For example, &#38; stands for the ampersand or & symbol. -->
+  <section>
+            	<h2>HTML Entities</h2>
+            	<article>
+            		<p>Non Breaking Space:</p>
+            		<p>ampersand :  &#38;</p>
+            		<p>Pound :  &#163;</p>
+            		<p>Copyright :  &#169;</p>
+            	</article>
+            </section>
+<!-- There are all kinds of special tags.
+First off is the description list tag which allows you to use dl tags to write lists with descriptions for each elements attached to them. -->
+            <section id="special-tags" class="main-section">
+            	<h2>Special Tags :</h2>
+            	<article id="st-dl" class="special-tag">
+            		<dl>
+            			<dt>Coffee</dt>
+            			<!-- dt is used for the term. -->
+            			<dd>-black hot drink</dd>
+            			<!-- dd is for the description. -->
+            			<dt>Milk</dt>
+            			<dd>-white cold drink</dd>
+            		</dl>
+            	</article>
+            	<!-- It is important to know that each of the special tags is defined within it's own article tag. -->
+            	
+            	<article id="st-abbr" class="special-tag">
+            		<!-- <abbr> tag is used to indicate an abbreviation. -->
+            			<abbr title="Hyper Text Markup Language">HTML</abbr>
+            			</article><br>
+
+            			<article id="st-abbr" class="special-tag">
+            				<abbr title="Cascading Style Sheets">CSS</abbr>
+            			</article><br>
+            		<!-- The <details> tag can be opened to check detailed information on a subject. -->
+            			
+            	<article class="special-tag" id="details">
+            			<details>
+            				<summary>What is a mobile Phone?</summary>
+            				<p>A mobile phone, cell phone or hand phone, sometimes shortened to simply mobile, cell or just phone, is a portable telephone that can make and receive calls over a radio frequency link while the user is moving within  a telephone service area.</p>
+            				</details>
+            			</article>
+</body>
+<footer id="footer">
+	<h2>Hidden comment:</h2>
+	<!-- This is an hidden comment in HTML. For an hidden comment in CSS you would use /* and */ respectively. -->
+	<!-- Extra Line of text -->
+</footer>
+</html>
