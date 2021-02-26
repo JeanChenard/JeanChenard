@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Assignment 3</title>
+	<meta charset="utf-8">
+</head>
+<body>
+	<div id="wrapper" class="wrapper">
+		<section id="html forms" class="main section">
+			<!-- Form needs two attributes to be valid: action and method. -->
+			<!-- action: the page where the data goes when you submit it. -->
+			<!-- method: how the data reaches its destination. -->
+			<!-- two types of methods are get(default) and post.
+			get (default) gets information via querry strings and appends it to the end of the adress. An example of that would be all the /something or other/ after the.com or .html on a website.
+			post sends the data in encrypted packages (like when an email on the web is title sharkcheese101 when its actually about puppets). -->
+			<form action="somepage.php" method="get">
+				<div id="fn-container" class="form-elm">
+					<!-- An imput element must be accompanied by a label.
+					The label for is used to connect with the input element it is labeling.
+					Value of the label for is the same as the value of name attribute for the input element. -->
+					<!-- Note: For HTML5 the value of for as to be equal to the id's value. -->
+					<label for="first-name">First Name</label>
+					<!-- Form input element must have two forms: type and name.
+						type: determines the input type (for ex.: text, email, password, number, etc.
+						name: serves as an unique identifier for specific input when data is submitted to the server mentioned in the action attribute of the form. -->
+						<!-- Sidenote: Best practice recommends that you use the same value for id as you would for thr name  (this makes it easier to recognize when styling and/or using JavaScript). -->
+						<input type="text" name="first-name" id="first-name" placeholder="First name goes here">
+					</div>
+					<div id="ln-container" class="form-elm">
+					<label for="last-name">Last Name</label>
+					<!-- Another important element of input is placeholder. Placeholder shows a pseudo-text box where the user would be writing something to tell them what they should input there in the form. The text in placeholder stays there until you type something (where it disappears) but will come back once you reload the page or remove what you write. -->
+					<input type="text" name="last-name" id="last-name" placeholder="Last Name goes here">
+				</div>
+				<div id="email-container" class="form-elm">
+					<label for="email">Email</label>
+					<!-- For an email tag to be valid it need to have an @ as stipulated by HTML5. -->
+					<!-- value attribute saves the input and submits it to the server. It is permanent and will not disappear when user starts inputting. -->
+					<input type="email" name="email" id="email" value="example@gmail.com">
+				</div>
+				<div id="pass-container" class="form-elm">
+					<label for="pass">Password</label>
+					<!-- input type="password" is used to create password inputs.
+						The value in this input type is hidden (it shows up as dots instead of letters).
+						required attribute is used to make this input required (the user cannot submit the form without putting a password in).-->
+						<input type="password" name="pass" id="pass" required>
+					</div>
+				<div id="text-container" class="form-elm">
+					<label for="introductory-text">Introductory Text</label>
+					<!-- textarea lets you submit text that is more then one line. -->
+					<!-- The informatiion submitted will correspond in the server. 
+						textarea preserves line break while submitting to the server.-->
+						<textarea name="introductory-text" id="introductory-text" placeholder="Enter Introductory Text here">Intro on Assignment 3: How to create a form.</textarea>
+					</div>
+					<div id="date-of-birth" class="form-elm">
+						<label for="date-of-birth">Date of Birth></label>
+						<input type="Date" name="date-of-birth" id="date-of-birth">
+					</div>
+					<div id="phone-number" class="form-elm">
+						<label for="phone">Mobile Number</label>
+						<!-- input type number is used to input numbers -->
+						<input type="tel" id="phone" name="phone"  pattern="[09-3]{3}-[0-9]{2}-[0-9]{3}" required>
+					</div>
+				<div id="radio-container" class="form-elm">
+					<p>Gender</p>
+					<label for="male">
+						<!-- Radio buttons are singular value checkboxes meaning the user can only check one option at a time.
+						Radio elements belonging to the same group share the names.
+						The unique id for it is id attribute.
+						checked makes it check by default. -->
+						<input type="radio" name="like-form"
+						id="male" value="male" checked>Male</label>
+						<label>
+						<input type="radio" name="like-form" id="female" value="female">Female</label>
+						<label>
+							<input type="radio" name="like-form" id="other" value="other">Other</label>
+					</div>
+					<div id="adress-container" class="form-elm">
+						<label for="adress">Adress</label>
+						<input type="text" id="adress" name="adress" placeholder="Enter your Adress here">
+					</div>
+				<div id="city-container" class="form-elm">
+					<label for="city">City</label>
+					<input type="text" id="city" name="city" placeholder="Enter the name of your city here">
+				</div>
+				<div id="province-drop-container" class="form-elm">
+					<label for="province">Province/Territory</label>
+					<!-- select element is used to create dropdowns in HTML.
+						select comes paired with option.
+						The value of the selected option gets submitted to the server.
+					 -->
+					 <select name="province" id="province">
+					 	<option value="ontario" selected>Ontario</option>
+					 	<!-- selected means this option will be chosen as default. -->
+					 	<option value="quebec">Québec</option>
+					 	<option value="manitoba">Manitoba</option>
+					 	<option value="saskatchewan">Saskatchewan</option>
+					 	<option value="alberta">Alberta</option>
+					 	<option value="british-columbia">British Columbia</option>
+					 	<option value="new-brunswick">New Brunswick</option>
+					 	<option value="nova-scotia">Nova Scotia</option>
+					 	<option value="prince-edward-island">Prince Edward Island</option>
+					 	<option value="newfoundland-and-labrador">Newfoundland and Labrador</option>
+					 	<option value="nunavut">Nunavut</option>
+					 	<option value="northwest-territories">Northwest Territories</option>
+					 	<option value="yukon">Yukon</option>
+					 </select>
+					</div>
+					<div id="country-container" class="form-elm">
+						<label for="country">Country</label>
+						<select name="country" id="country">
+							<option value="canada" selected>Canada</option>
+							<option value="united-states-of-america">U.S.A.</option>
+							<option value="Mexico">Mexico</option>
+						</select>
+					</div>
+					<div id="postal-code-container" class="form-elm">
+						<label for="postal-code">Postal Code</label>
+						<input type="text" id="postal-code" name="postal-code" placeholder="Enter your Postal Code here"></div>
+						<div id="hobbies-interests-container" class="form-elm">
+							<h3>Hobbies/Interests:</h3>
+							<!-- Input type checkbox is used to create checkboxes.
+							Just like with radio buttons, the checkboxes of a same group will share the same names. 
+							Unique Ids are given for their unique identification.
+							Checkboxes unlike radio buttons though allow for many options to be selected at once.-->
+							<label for="reading">Reading</label>
+							<input type="checkbox" name="hobbies-interest" id="reading" value="reading"><br>
+							 <label for="gaming">Gaming</label>
+							 <input type="checkbox" name="hobbies-interest" id="gaming" value="gaming"><br>
+							 <label for="sports">Sports</label>
+							 <input type="checkbox" name="hobbies-interest" id="sports" value="sports"><br>
+							 <label for="arts">Arts</label>
+							 <input type="checkbox" name="hobbies-interest" id="arts" value="arts"><br>
+							 <label for="eating">Eating</label>
+							 <input type="checkbox" name="hobbies-interest" id="eating" value="eating"><br>
+							 <label for="sleeping">Sleeping</label>
+							 <input type="checkbox" name="hobbies-interest" id="sleeping"
+							 value="sleeping"><br>
+							 <label for="drinking-with-friends">Drinking with Friends</label>
+							 <input type="checkbox" name="hobbies-interest" id="drinking-with-friends" value="drinking-with-friends"><br>
+							 <label for="watching-tv">Watching TV</label>
+							 <input type="checkbox" name="hobbies-interest" id="watching-tv" value="watching-tv"><br>
+							</div>
+			<div id="website-container" class="form-elm">
+				<label for="website">Website (URL)</label>
+					<!-- Input type url is validated in HTML5
+					You can only enter urls, anything else is unacceptable.Also you might need to enter the full address to be able to get a valid entry (for example you might need to add http or https to the address) -->
+					<input type="url" name="website" id="website">
+				</div>
+				<!-- Button type="submit" creates a button that submits your form.
+				All HTML5 elements get automatically validated by the browser. -->
+				<button type="submit">Submit</button>
+				<!-- Button type="reset" resets the page without having to reload it. -->
+				<button type="reset">Reset</button>
+			</form>
+		</section>
+		</div>
+	</body>
+	</html>
+
+
+
+
+
+
+
+
+

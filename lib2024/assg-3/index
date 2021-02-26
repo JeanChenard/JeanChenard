@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Assignment 3</title>
+	<meta charset="utf-8">
+</head>
+<body>
+	<div id="wrapper" class="wrapper">
+		<section id="html forms" class="main section">
+			<!-- Form needs two attributes to be valid: action and method. -->
+			<!-- action: the page where the data goes when you submit it. -->
+			<!-- method: how the data reaches its destination. -->
+			<!-- two types of methods are get(default) and post.
+			get (default) gets information via querry strings and appends it to the end of the adress. An example of that would be all the /something or other/ after the.com or .html on a website.
+			post sends the data in encrypted packages (like when an email on the web is title sharkcheese101 when its actually about puppets). -->
+			<form action="somepage.php" method="get">
+				<div id="fn-container" class="form-elm">
+					<!-- An imput element must be accompanied by a label.
+					The label for is used to connect with the input element it is labeling.
+					Value of the label for is the same as the value of name attribute for the input element. -->
+					<!-- Note: For HTML5 the value of for as to be equal to the id's value. -->
+					<label for="FirstName">First Name</label>
+					<!-- Form input element must have two forms: type and name.
+						type: determines the input type (for ex.: text, email, password, number, etc.
+						name: serves as an unique identifier for specific input when data is submitted to the server mentioned in the action attribute of the form. -->
+						<!-- Sidenote: Best practice recommends that you use the same value for id as you would for thr name  (this makes it easier to recognize when styling and/or using JavaScript). -->
+						<input type="text" name="FirstName" id="FirstName" placeholder="First name goes here">
+					</div>
+					<div id="ln-container" class="form-elm">
+					<label for="LastName">Last Name</label>
+					<!-- Another important element of input is placeholder. Placeholder shows a pseudo-text box where the user would be writing something to tell them what they should input there in the form. The text in placeholder stays there until you type something (where it disappears) but will come back once you reload the page or remove what you write. -->
+					<input type="text" name="LastName" id="LastName" placeholder="Last Name goes here">
+				</div>
+				<div id="email-container" class="form-elm">
+					<label for="email">Email</label>
+					<!-- For an email tag to be valid it need to have an @ as stipulated by HTML5. -->
+					<!-- value attribute saves the input and submits it to the server. It is permanent and will not disappear when user starts inputting. -->
+					<input type="email" name="email" id="email" value="example@gmail.com">
+				</div>
+				<div id="pass-container" class="form-elm">
+					<label for="pass">Password</label>
+					<!-- input type="password" is used to create password inputs.
+						The value in this input type is hidden (it shows up as dots instead of letters).
+						required attribute is used to make this input required (the user cannot submit the form without putting a password in).-->
+						<input type="password" name="pass" id="pass" required>
+					</div>
+				<div id="text-container" class="form-elm">
+					<label for="IntroductoryText">Introductory Text</label>
+					<!-- textarea lets you submit text that is more then one line. -->
+					<!-- The informatiion submitted will correspond in the server. 
+						textarea preserves line break while submitting to the server.-->
+						<textarea name="IntroductoryText" id="IntroductoryText" placeholder="Enter Introductory Text here">Intro on Assignment 3: How to create a form.</textarea>
+					</div>
+					<div id="date-of-birth" class="form-elm">
+						<label for="date-of-birth">Date of Birth></label>
+						<input type="Date" name="date-of-birth" id="date-of-birth">
+					</div>
+					<div id="phone-number" class="form-elm">
+						<label for="MobileNumber">Mobile Number</label>
+						<!-- input type number is used to input numbers -->
+						<input type="phone-number" id="MobileNumber" name="MobileNumber" required>
+					</div>
+				</form>
+			</section>
+		</div>
+	</body>
+	</html>
+	
+
+
+
+
+
+
+
+
