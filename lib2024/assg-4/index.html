@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en-ca">
+<!-- Using the lang tag allows you to choose what language your page should be in. In this case, it's Canadian English or English (Canada) because of the en-ca part. -->
+<head>
+	<meta charset="utf-8">
+	<title>Assignment 4</title>
+	<!-- The link file links to the css file attached to this html document. In a link tag there are two attributes that you need to have: type and href. type tells us what kind of document it will be sent to and its purpose whereas href is used to define the relative path of the css file that is linked to this html page; In this case the style.css folder. -->
+	<!-- css/ means that we want the file to open the css folder. style.css means that we want to lnik it to the style.css folder. -->
+	<link rel="stylesheet" type="text/css" href="styles/style.css">
+	<!-- Using the <style> tag in the head lets us define the styles used in the document. This method is called "embeded styles". -->
+		<style type="text/css">
+			/*
+			The following is a css block and is defined by:
+			1) the elements that you want to target
+			2){}
+			3)containing CSS block;
+			*/
+			/*
+			various elements can be targetted by using "," at the start of the css block.
+			*/
+			h1, h2, aside, header, footer {
+				color: black;
+				text-align: left;
+
+			}
+			/*color defines the color of the text*/
+			/*text-align tells you whether the text aligns to the left, the right, centers itself, etc.*/
+			/*All <p> tags will have the following style apply, unless they are with an inline element (in which case it shall retain its properties) because inline style will overwrite any embeded or external style sheets*/
+			p {
+				color: #000000;
+				font-size: 12px;
+
+			}
+			title {
+				color: #000000
+				font-size: 36px;
+			}
+			h1 {
+				color: #000000
+				font-size: 24px;
+			}
+			aside (title), h2 {
+				color: #000000;
+				font-size: 19px;
+			}
+		</style>
+</head>
+<body>
+	<!-- It is important to add classes and ids to elements so that you can access them via your CSS document -->
+	<div id="container" class="container">
+	<!-- Header starts -->
+	<header class="site-header" id="site-header">
+		<!-- img tag is used to add images.
+			src attribute is used to specify the path of the image we are accessing.
+			All the path of the images are relative to your HTML document.
+			/ is used to access content inside a folder.-->
+			<img src="lib2024/assg-4/assg-4-files/img folder/logo.png" class="logo" alt="My website logo">
+			<title>Title of Page</title>
+
+			<!-- Main navigation starts -->
+			<nav class="main-nav-container">
+			</nav>
+		</header>
+
+
+
+
+
+</body>
+</html>
