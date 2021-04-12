@@ -1,0 +1,233 @@
+<!DOCTYPE html>
+<html >
+<head>
+	<meta charset="utf-8">
+	<title>LIB2024 - QA</title>
+</head>
+<body>
+	<h1>LIB2024- QA</h1>
+	<!-- Qus/Ans list begins -->
+	<ol>
+		<!-- Qus 1 -->
+		<li>
+			<p>
+				<strong>Qus: </strong>
+				What are the three components of Web?
+			</p>
+			<p>
+				<strong>Ans: </strong>
+				HTML, CSS, JavaScript.
+		</p></li>
+		<!-- Qus 2 -->
+		<li>
+			<p>
+				<strong>Qus:</strong>
+				Define version control and give one example.
+			</p>
+			<p>
+				<strong>Ans:</strong>
+				Version control is a system that records changes to a file or a set of files over time so that you can recall specific versions later. An example of this is GitHub.
+			</p>
+		</li>
+		<!-- Qus 3 -->
+		<li>
+			<p>
+				<strong>Qus:</strong>
+				What tag is used to create the title of a web page? Give an example.
+			</p>
+			<p>
+				<strong>Ans:</strong>
+				The tag used to create the title of a web page is the &lt;title&gt; tag.
+							</p>
+		</li>
+		<!-- Qus 4 -->
+		<li>
+			<p>
+				<strong>Qus:</strong>
+				What tag is used to create a paragraph in html? Give an example.
+			</p>
+			<p>
+				<strong>Ans:</strong>
+				The tag used to create the title of a web page is the &lt;p&gt; tag.
+							</p>
+		</li>
+		<!-- Qus 5 -->
+		<li>
+			<p>
+				<strong>Qus:</strong>
+			Identify the odd one from these tags: &lt;span&gt;, &lt;p&gt;, &lt;a&gt;, &lt;i&gt; and state the reason?</p>
+			<p>
+				<strong>Ans:</strong>
+			I think &lt;span&gt; would be the odd one out as it is the only one which is an inline element.
+		</p>
+	</li>
+	<!-- Qus 6 -->
+	<li>
+		<p>
+			<strong>Qus:</strong>
+		What are the tags required to create a navigation list in HTML?</p>
+		<p>
+			<strong>Ans:</strong>
+		&lt;ul&gt; or &lt;ol&gt; and &lt;li&gt; with a class=nav are the tags required to create a navigation list in HTML.</p>
+	</li>
+	<!-- Qus 7 -->
+	<li>
+		<p>
+			<strong>Qus:</strong>
+			What element is used to create images? Name its attributes.</p>
+			<p>
+				<strong>Ans:</strong>
+			You use &lt;img&gt; tag to create images. Its attributes are &lt;src&gt;, &lt;class&gt;, and &lt;alt&gt;.</p>
+		</li>
+		<!-- Qus 8 -->
+		<li>
+			<p>
+				<strong>Qus</strong>
+			Identify the odd one from these tags: &lt;table&gt;, &lt;tr&gt;, &lt;b&gt;, &lt;td&gt; and state the reason.</p>
+			<p>
+				<strong>Ans:</strong>
+			The &lt;b&gt; tag is the odd one here since it isn't a table element like the other tags are.</p>
+		</li>
+		<!-- Qus 9 -->
+		<li>
+			<p>
+				<strong>Qus:</strong>
+			Give an example of a color picker input.</p>
+			<p>
+				<strong>Ans:</strong> Hex value is a color picker who's intensity varies between 00 (which would be darkest color) and ff (which would be lightest color). For example #00005a would be a dark blue color as its values are closer to 0 then f.</p>
+			</li>
+			<!-- Qus 10 -->
+			<li>
+				<p>
+					<strong>Qus:</strong>
+				What is the use of name and value attributes? Give two examples.</p>
+				<p>
+					<strong>Ans:</strong>
+					The name attribute specifies the name of an element. For example name="Canada" specifies the element who's named Canada. 
+					The value attribute has various roles but for the most part it is used to specify the function of a tag or element (for example for an input tag, the value attribute would specify the initial value of that element).</p>
+				</li>
+				<!-- Qus 11 -->
+				<li>
+					<p>
+						<strong>Qus:</strong>
+					Give an example of inline style.</p>
+					<p>
+						<strong>Ans:</strong>
+					&lt;section style="font-style: italic;" class="content"&gt; is an example of inline style.</p>
+				</li>
+				<!-- Qus 12 -->
+				<li>
+					<p>
+						<strong>Qus:</strong>
+					How would you link an external style sheet? Give example.</p>
+					<p>
+						<strong>Ans:</strong>
+						You link it using a link tag that goes and accesses it from your style.css page like seen in the example below:
+						&lt;link rel="stylesheet" type="text/css" href="css/style.css"&gt;.</p>
+					</li>
+					<!-- Qus 13 -->
+					<li>
+						<p>
+							<strong>Qus:</strong>
+							Create CSS block to center an element both horizontally and vertically that has position:absolute and has width:200px and height:200px.</p>
+							<p>
+								<strong>Ans:</strong>
+							.element 1 {
+							           position: absolute;<br>
+							           left: 50%;<br>
+							           top: 50%;<br>
+							           width: 200px;<br>
+							           height: 200px;<br>
+							           margin: -100px 0 0 -100px; 
+							       }
+							</p>
+						</li>
+						<!-- Qus 14 -->
+						<li>
+							<p>
+								<strong>Qus:</strong>
+								Create CSS keyframes block called "spin" that rotates an element.</p>
+								<p>
+									<strong>Ans:</strong>
+									@keyframes spin {<br>
+
+									from {<br>
+									transform: rotate(0deg);<br>
+								}<br>
+
+								to {<br>
+								transform: rotate(360deg);<br>
+							}<br>
+						}<br>
+					</p>
+				</li>
+				<!-- Qus 15 -->
+				<li>
+					<p>
+						<strong>Qus:</strong>
+						Create CSS animation block to rotate an element that has the following properties:
+						<ul>
+							<li>class "rotate-me"</li>
+							<li>It rotates 5 times at intervals of 0.5s with "linear" transition using animation keyframes "spin"</li>
+						</ul>
+					</p>
+						<p>
+							<strong>Ans:</strong>
+							animation:<br>
+				spin 5s linear 5;<br></p>
+			</li>
+			<!-- Qus 16 -->
+			<li>
+				<p>
+					<strong>Qus:</strong>
+				How would you include create an alert with string "I love JavaScript" using JavaScript?</p>
+				<p>
+					<strong>Ans:</strong>
+					By doing this:
+					alert(elementId);
+	                alert("I love JavaScript")
+	                alert(this);
+	                alert(elementId+"I love JavaScript");
+	            </p>
+	        </li>
+	        <!-- Qus 17 -->
+	        <li>
+	        	<p>
+	        		<strong>Qus:</strong>
+	        	How would you fade out an element with id "fade-me" after a delay of 300ms using JQuery?</p>
+	        	<p>
+	        		<strong>Ans:</strong>
+	        		Like this:
+	        	$('fade-me').delay(300).fadeOut(300);</p>
+	        </li>
+	        <!-- Qus 18 -->
+	        <li>
+	        	<p>
+	        		<strong>Qus:</strong>
+	        	How would you select all elements with class "my-class" using Javascript and Jquery?</p>
+	        	<p>
+	        		<strong>Ans:</strong>
+	        	Use the querySelectorAll("my-class") to select all classes with "my-class" in them.</p>
+	        </li>
+	        <!-- Qus 19 -->
+	        <li>
+	        	<p>
+	        		<strong>Qus:</strong>
+	        	Give an example of input field that takes phone number with format "123-456-7890"?</p>
+	        	<p>
+	        		<strong>Ans:</strong>
+	        		You can use either an input type="number" or input type="tel" to write a phone number in HTML. In the case of tel though it links you directly to the number you are trying to reach so use number instead if you just want it in text. For example:
+	        	&lt;input type="number" id="phone-number" name="phone-number"&gt;123-456-7890&lt;/input&gt;</p>
+	        </li>
+	        <!-- Qus 20 -->
+	        <li>
+	        	<p>
+	        		<strong>Qus:</strong>
+	        	Among HTML, CSS, JavaScript, JQuery, what language did you like the best? State the reason.</p>
+	        	<p>
+	        		<strong>Ans:</strong>
+	        	Good question, hmm, let me think... I think for me HTML might have been my favorite, if only because it's the easiest and most simple to use, although I will admit I found it really fun to style things with CSS and create interactive modules with JavaScript!</p>
+	        </li>
+	    </ol>
+	</body>
+</html>
