@@ -1,0 +1,199 @@
+<!DOCTYPE html>
+<html lang="en-ca">
+<!-- Using the lang tag allows you to choose what language your page should be in. In this case, it's Canadian English or English (Canada) because of the en-ca part. -->
+<head>
+	<meta charset="utf-8">
+	<!-- Make sure to add the following tags/elements when using icons with fontawesome. -->
+	<meta name='viewport' content='width=device-width, initial-scale=1'>
+<script src='https://kit.fontawesome.com/a076d05399.js' crossorigin='anonymous'></script>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+	<title>Final Assignment</title>
+	<!-- The link file links to the css file attached to this html document. In a link tag there are two attributes that you need to have: type and href. type tells us what kind of document it will be sent to and its purpose whereas href is used to define the relative path of the css file that is linked to this html page; In this case the style.css folder. -->
+	<!-- css/ means that we want the file to open the css folder. style.css means that we want to lnik it to the style.css folder. -->
+	<link rel="stylesheet" type="text/css" href="css/style.css">
+	<!-- Using the <style> tag in the head lets us define the styles used in the document. This method is called "embeded styles". -->
+			<style>
+			table, th, td{
+				padding: 10px;
+				border: 1px solid black;
+			}
+			</style>
+</head>
+<body>
+	<!-- It is important to add classes and ids to elements so that you can access them via your CSS document -->
+	<div id="container" class="container"></div>
+	<!-- Header starts -->
+	<header class="site-header clearfix" id="site-header">
+		 <div class="logo"></div>
+			<h1 class="page-title">MY LOGO</h1>
+			<nav class="main-nav-container mobile-nav">
+	<ul class="nav">
+  <li><a href="home.html">HOME</a></li>
+  <li><a href="about.html">ABOUT</a></li>
+  <li><a href="schedule.html">SCHEDULE</a></li>
+  <li><a href="portfolio.html">PORTFOLIO</a></li>
+  <li><a href="contact.html">CONTACT</a></li>
+</ul>
+<!-- <div class="ham"></div> -->
+		</header>
+		<section id="main-paragraph" class="main-section">
+		<article class="main clearfix">
+			<h2>ABOUT</h2>
+
+			<p>Tristique orci id odio consectetur parturient mus non. Vulputate interdum proin aliquet dictumst nulla non natoque conubia per est? Adipiscing aliquam auctor interdum semper condimentum. Morbi ultrices posuere massa aenean cum libero convallis per platea. Maecenas morbi auctor mus viverra neque viverra senectus scelerisque placerat. Elit id ac tellus dictumst. Morbi odio molestie gravida nullam curae; consequat suspendisse et quam. Vestibulum posuere lacus blandit praesent dictumst et rhoncus nibh in fames habitasse pharetra. Dictum laoreet vitae commodo ad. Tristique!</p>
+
+<p>Metus laoreet ultricies taciti luctus. Praesent, molestie tempor mus est taciti! Sem consectetur vel senectus montes malesuada senectus? Litora tellus aptent libero elit malesuada sagittis. Feugiat cras felis facilisis ante mattis orci elementum dui vitae amet. In sem iaculis amet elit nam? Libero magna donec magnis vivamus? At cum dictum enim pellentesque dapibus dignissim commodo scelerisque pharetra phasellus ligula enim. Netus senectus, nec litora. Magna quisque purus, mauris bibendum dictumst maecenas volutpat.
+</p>
+</article>
+<aside class="col-main-site-sidebar clearfix">
+<img src="img/pexels-couleur-2302908.jpg" alt="Lotus Photo">
+</aside>
+</section>
+<section id="main-table" class="main-section">
+	<article>
+<table border="1">
+	<h2>SCHEDULE</h2>
+	<thead>
+	<tr>
+		<th>TIME</th>
+		<th>MONDAY</th>
+		<th>TUESDAY</th>
+		<th>WEDNESDAY</th>
+		<th>THURSDAY</th>
+		<th>FRIDAY</th>
+	</tr>
+	</thead>
+	<tbody>
+	<tr>
+		<td>09:00 - 11:00</td>
+		<td>Communications 1</td>
+		<td>Client Services</td>
+		<td>Special Collections</td>
+		<td>Directed Research Seminar</td>
+		<td>Client Services</td>
+	</tr>
+	<tr>
+		<td>11:00 - 12:30</td>
+		<td>Reference</td>
+		<td>Internet App</td>
+		<td>Library Software</td>
+		<td>French</td>
+		<td>Reference</td>
+	</tr>
+	<tr>
+		<td>14:00 - 15:00</td>
+		<td>Acquisitions</td>
+		<td>General Elective</td>
+		<td>Marketing</td>
+		<td>Emerging Library Tech</td>
+		<td>Library Software</td>
+	</tr>
+	<tr>
+		<td>15:30 - 17:30</td>
+		<td>French</td>
+		<td>French</td>
+		<td>Acquisitions</td>
+		<td>Subject Analysis</td>
+		<td>Internet App</td>
+	</tr>
+	</tbody>
+</table>
+</article>
+</section>
+<section id="main-form" class="main-section">
+	<form action="somepage.php" method="get">
+		<h2>EDIT PROFILE</h2>
+				<div id="n-container" class="form-elm">
+					<label for="name">Name</label>
+					<input type="text" name="name" id="name" placeholder="Insert Name here" required>
+					</div>
+					<div id="email-container" class="form-elm">
+					<label for="email">Email</label>
+					<input type="email" name="email" id="email" value="example@gmail.com"  required>
+				</div>
+				<div id="adress-container" class="form-elm">
+						<label for="adress">Address</label>
+						<input type="text" id="address" name="address" placeholder="Enter your Address here"  required>
+					</div>
+					<div id="city-container" class="form-elm">
+					<label for="city">City</label>
+					<input type="text" id="city" name="city" placeholder="Enter the name of your city here"  required>
+				</div>
+					<div id="province-drop-container" class="form-elm">
+					<label for="province">Province/Territory</label>
+					<!-- select element is used to create dropdowns in HTML.
+						select comes paired with option.
+						The value of the selected option gets submitted to the server.
+					 -->
+					 <select name="province" id="province"  required>
+					 	<option value="ON" selected>Ontario</option>
+					 	<!-- selected means this option will be chosen as default. -->
+					 	<option value="QC">Québec</option>
+					 	<option value="MB">Manitoba</option>
+					 	<option value="SK">Saskatchewan</option>
+					 	<option value="AB">Alberta</option>
+					 	<option value="BC">British Columbia</option>
+					 	<option value="NB">New Brunswick</option>
+					 	<option value="NS">Nova Scotia</option>
+					 	<option value="PEI">Prince Edward Island</option>
+					 	<option value="NL">Newfoundland and Labrador</option>
+					 	<option value="NU">Nunavut</option>
+					 	<option value="NT">Northwest Territories</option>
+					 	<option value="YT">Yukon</option>
+					 </select>
+					</div>
+					<div id="postal-code-container" class="form-elm">
+						<label for="postal-code">Postal Code</label>
+						<input type="text" id="postal-code" name="postal-code" placeholder="Enter your Postal Code here"  required></div>
+						<button type="submit">Submit</button>
+					</form>
+				</section>
+
+						
+<div id="results">
+	<h2>PROFILE INFO</h2>
+	<i class="fas fa-user-circle"></i>
+	<p >Name:<span id="name_result"></span></p>
+	<p >Email:<a href="#" id="email_result"></a></p>
+	<p >Address:<span id="address_result"></span></p>
+	<p >City:<span id="city_result"></span></p>
+	<p >Province:<span id="province_result"></span></p>
+	<p >Postal Code:<span id="pc_result"></span></p>
+	<i class="fal fa-envelope"></i>
+</div>
+				
+
+
+	<!-- include jQuery -->
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+	<!-- script tag is not a self closing tag so it requires </script> to close itself -->
+	<!-- To add an external script file, script tag is used with src attribute containing the path of the script that we would like to include in this document -->
+	<script type="text/javascript" src="scripts/form_validation.js"></script>
+</body>
+<footer>
+	<section id="section-1" class="footer-section">
+		<h3>QUICK LINKS</h3>
+		<ul>
+			<li><a href="schedule.html">SCHEDULE</a></li>
+			<li><a href="about.html">ABOUT</a></li>
+			<li><a href="portfolio.html">PORTFOLIO</a></li>
+			<li><a href="contact.html">CONTACT</a></li>
+		</ul>
+	</section >
+	<section id="section-2" class="footer-section">
+		<h3>FOLLOW US</h3>
+		<ul>
+		<li><i class="fab fa-facebook"></i></li>
+		<li><i class="fab fa-youtube"></i></li>
+		<li><i class="fab fa-twitter-square"></i></li>
+		</ul>
+	</section>
+	<section id="section-3" class="footer-section">
+		<h3>ADDRESS</h3>
+
+		<p>1385, Woodroffe Ave,<br>
+			Nepean, ON K2G 1V8<br>
+		Canada</p>
+	</section>
+</footer>
+</html>
