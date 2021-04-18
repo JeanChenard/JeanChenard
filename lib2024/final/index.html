@@ -5,12 +5,14 @@
 	<meta charset="utf-8">
 	<!-- Make sure to add the following tags/elements when using icons with fontawesome. -->
 	<meta name='viewport' content='width=device-width, initial-scale=1'>
-<script src='https://kit.fontawesome.com/a076d05399.js' crossorigin='anonymous'></script>
+<!-- <script src='https://kit.fontawesome.com/a076d05399.js' crossorigin='anonymous'></script> -->
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 	<title>Final Assignment</title>
 	<!-- The link file links to the css file attached to this html document. In a link tag there are two attributes that you need to have: type and href. type tells us what kind of document it will be sent to and its purpose whereas href is used to define the relative path of the css file that is linked to this html page; In this case the style.css folder. -->
 	<!-- css/ means that we want the file to open the css folder. style.css means that we want to lnik it to the style.css folder. -->
+	<link rel="stylesheet" type="text/css" href="styles/form_validation.css">
 	<link rel="stylesheet" type="text/css" href="css/style.css">
+	<link rel="stylesheet" type="text/css" href="css/fonts.css">
 	<!-- Using the <style> tag in the head lets us define the styles used in the document. This method is called "embeded styles". -->
 			<style>
 			table, th, td{
@@ -20,6 +22,10 @@
 			</style>
 </head>
 <body>
+	<div class="overlay-container loader-container">
+		<div class="loader"></div>
+	</div>
+
 	<!-- It is important to add classes and ids to elements so that you can access them via your CSS document -->
 	<div id="container" class="container"></div>
 	<!-- Header starts -->
@@ -28,20 +34,19 @@
 			<h1 class="page-title">MY LOGO</h1>
 			<nav class="main-nav-container mobile-nav">
 	<ul class="nav">
-  <li><a href="home.html">HOME</a></li>
-  <li><a href="about.html">ABOUT</a></li>
-  <li><a href="schedule.html">SCHEDULE</a></li>
-  <li><a href="portfolio.html">PORTFOLIO</a></li>
-  <li><a href="contact.html">CONTACT</a></li>
+  <li>HOME</li>
+  <li>ABOUT</li>
+  <li>SCHEDULE</li>
+  <li>PORTFOLIO</li>
+  <li>CONTACT</li>
 </ul>
-<!-- <div class="ham"></div> -->
+<div class="ham"></div> 
 		</header>
 		<section id="main-paragraph" class="main-section">
 		<article class="main clearfix">
 			<h2>ABOUT</h2>
 
-			<p>Tristique orci id odio consectetur parturient mus non. Vulputate interdum proin aliquet dictumst nulla non natoque conubia per est? Adipiscing aliquam auctor interdum semper condimentum. Morbi ultrices posuere massa aenean cum libero convallis per platea. Maecenas morbi auctor mus viverra neque viverra senectus scelerisque placerat. Elit id ac tellus dictumst. Morbi odio molestie gravida nullam curae; consequat suspendisse et quam. Vestibulum posuere lacus blandit praesent dictumst et rhoncus nibh in fames habitasse pharetra. Dictum laoreet vitae commodo ad. Tristique!</p>
-
+			<p>Tristique orci id odio consectetur parturient mus non. Vulputate interdum proin aliquet dictumst nulla non natoque conubia per est? Adipiscing aliquam auctor interdum semper condimentum. Morbi ultrices posuere massa aenean cum libero convallis per platea. Maecenas morbi auctor mus viverra neque viverra senectus scelerisque placerat. Elit id ac tellus dictumst. Morbi odio molestie gravida nullam curae; consequat suspendisse et quam. Vestibulum posuere lacus blandit praesent dictumst et rhoncus nibh in fames habitasse pharetra. Dictum laoreet vitae commodo ad. Tristique!</p><br>
 <p>Metus laoreet ultricies taciti luctus. Praesent, molestie tempor mus est taciti! Sem consectetur vel senectus montes malesuada senectus? Litora tellus aptent libero elit malesuada sagittis. Feugiat cras felis facilisis ante mattis orci elementum dui vitae amet. In sem iaculis amet elit nam? Libero magna donec magnis vivamus? At cum dictum enim pellentesque dapibus dignissim commodo scelerisque pharetra phasellus ligula enim. Netus senectus, nec litora. Magna quisque purus, mauris bibendum dictumst maecenas volutpat.
 </p>
 </article>
@@ -121,12 +126,11 @@
 				</div>
 					<div id="province-drop-container" class="form-elm">
 					<label for="province">Province/Territory</label>
-					<!-- select element is used to create dropdowns in HTML.
-						select comes paired with option.
-						The value of the selected option gets submitted to the server.
-					 -->
-					 <select name="province" id="province"  required>
-					 	<option value="ON" selected>Ontario</option>
+					<!-- select element is used to create dropdowns in HTML. -->
+						<!-- select comes paired with option. -->
+						<!-- The value of the selected option gets submitted to the server. -->
+			<select name="province" id="province"  required>
+				<option value="ON" selected>Ontario</option>
 					 	<!-- selected means this option will be chosen as default. -->
 					 	<option value="QC">Québec</option>
 					 	<option value="MB">Manitoba</option>
@@ -147,19 +151,22 @@
 						<input type="text" id="postal-code" name="postal-code" placeholder="Enter your Postal Code here"  required></div>
 						<button type="submit">Submit</button>
 					</form>
-				</section>
+				</section> 
+
+
+
 
 						
 <div id="results">
 	<h2>PROFILE INFO</h2>
-	<i class="fas fa-user-circle"></i>
+	<i class="fa fa-user-circle"></i>
 	<p >Name:<span id="name_result"></span></p>
 	<p >Email:<a href="#" id="email_result"></a></p>
 	<p >Address:<span id="address_result"></span></p>
 	<p >City:<span id="city_result"></span></p>
 	<p >Province:<span id="province_result"></span></p>
 	<p >Postal Code:<span id="pc_result"></span></p>
-	<i class="fal fa-envelope"></i>
+	<i class="fa fa-envelope"></i>
 </div>
 				
 
@@ -174,18 +181,18 @@
 	<section id="section-1" class="footer-section">
 		<h3>QUICK LINKS</h3>
 		<ul>
-			<li><a href="schedule.html">SCHEDULE</a></li>
-			<li><a href="about.html">ABOUT</a></li>
-			<li><a href="portfolio.html">PORTFOLIO</a></li>
-			<li><a href="contact.html">CONTACT</a></li>
+			<li>SCHEDULE</li>
+			<li>ABOUT</li>
+			<li>PORTFOLIO</li>
+			<li>CONTACT</li>
 		</ul>
 	</section >
 	<section id="section-2" class="footer-section">
 		<h3>FOLLOW US</h3>
 		<ul>
-		<li><i class="fab fa-facebook"></i></li>
-		<li><i class="fab fa-youtube"></i></li>
-		<li><i class="fab fa-twitter-square"></i></li>
+		<li><i class="fa fa-facebook"><a href="https://www.facebook.com/"></a></i></li>
+		<li><i class="fa fa-youtube"><a href="https://www.youtube.com/"></a></i></li>
+		<li><i class="fa fa-twitter-square"><a href="https://twitter.com/?lang=en"></a></i></li>
 		</ul>
 	</section>
 	<section id="section-3" class="footer-section">

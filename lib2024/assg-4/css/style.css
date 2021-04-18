@@ -55,7 +55,7 @@ table {
 	display: table;
 	clear: both;
 }
-/*/*Make sure major containers in your HTML file are set to 100% width to achieve Fluid Layout */
+/*Make sure major containers in your HTML file are set to 100% width to achieve Fluid Layout */
 
 header, footer{
 	width: 100%;
@@ -152,5 +152,3 @@ footer{
  	 background: #bb0000;
  	 color: #7cc576;
  }
-
-
