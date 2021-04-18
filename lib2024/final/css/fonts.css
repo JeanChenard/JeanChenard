@@ -1,4 +1,4 @@
 @charset "utf-8";
 
-@import url('../Merriweather-Regular');
-@import url('../fonts.css/SinkinSans-400Regular');
+@import url('fonts/Merriweather-Regular');
+@import url('fonts/SinkinSans-400Regular');
