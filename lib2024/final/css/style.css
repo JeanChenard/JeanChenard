@@ -106,10 +106,10 @@ h2, h3, p, li, th,td, label {
     box-sizing: border-box;
  }
 
-/*.ham {
+.ham {
 	float: right;
-	/*background: #BBDEFB;*/
-/*}
+	background: #BBDEFB;
+}
 
 .ham {
 		
@@ -117,9 +117,9 @@ h2, h3, p, li, th,td, label {
 		margin:15px;
 		padding-top: 5px;
 		position: relative;
-		float: right;*/
+		float: right;
 		/*this is used to create a pointer for element*/
-		/*cursor: pointer;
+		cursor: pointer;
 	}
 
 	.ham, .ham:before, .ham:after {
@@ -162,7 +162,7 @@ h2, h3, p, li, th,td, label {
 	background: lightgreen;
 	border-bottom: 2px solid #121212;
 
-}*/
+}
 
  body{
   background-image: url("../img/white-waves.png");

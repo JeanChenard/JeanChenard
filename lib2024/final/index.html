@@ -44,8 +44,8 @@
 				</nav>
 				<div class="ham"></div> 
 				<!-- mobile navigation start -->
-<!-- 		<div class="mobile-nav-container"> -->
-			<!-- <ul class="main-nav">
+ 		<div class="mobile-nav-container"> 
+			 <ul class="main-nav">
 				<ul class="main-nav clearfix">
 						<li><a href="home.html">HOME</a></li>
 						<li><a href="about.html">ABOUT</a></li>
@@ -53,7 +53,7 @@
 						<li><a href="portfolio.html">PORTFOLIO</a></li>
 						<li><a href="contact.html">CONTACT</a></li>
 					</ul>
-			</nav> -->
+			</nav> 
 		</header>
 
 		<section id="main-paragraph" class="main-section"> 
@@ -118,8 +118,8 @@
 	</tbody>
 </table>
 </section>
-<section id="main-form" class="main-section">
-	<form action="somepage.php" method="get">
+<section id="main-form" class="form-value-transfer clearfix">
+	<form id="form" action="submit.php" method="post">
 		<h2>EDIT PROFILE</h2>
 				<div id="n-container" class="form-elm">
 					<label for="name">Name</label>
@@ -127,7 +127,7 @@
 					</div>
 					<div id="email-container" class="form-elm">
 					<label for="email">Email</label>
-					<input type="email" name="email" id="email" value="example@gmail.com"  required>
+					<input type="email" name="email" id="email" placeholder="example@gmail.com"  required>
 				</div>
 				<div id="adress-container" class="form-elm">
 						<label for="adress">Address</label>
@@ -161,15 +161,11 @@
 					</div>
 					<div id="postal-code-container" class="form-elm">
 						<label for="postal-code">Postal Code</label>
-						<input type="text" id="postal-code" name="postal-code" placeholder="Enter your Postal Code here"  required></div>
+						<input type="text" id="postal-code" name="postal-code" placeholder="A0A 0A0" required="" pattern="[A-Za-z][0-9][A-Za-z] [0-9][A-Za-z][0-9]" value=""></div>
 						<button type="submit">Submit</button>
 					</form>
 				</section> 
 
-
-
-
-						
 <div id="results" class="profile">
 	<h2>PROFILE INFO</h2>
 	<i class="fa fa-user-circle"></i>
@@ -178,7 +174,7 @@
 	<p >Address:<span id="address_result"></span></p>
 	<p >City:<span id="city_result"></span></p>
 	<p >Province:<span id="province_result"></span></p>
-	<p >Postal Code:<span id="pc_result"></span></p>
+	<p >Postal Code:<span id="postal-code_result"></span></p>
 	<i class="fa fa-envelope"></i>
 </div>
 				
@@ -188,7 +184,7 @@
 	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
 	<!-- script tag is not a self closing tag so it requires </script> to close itself -->
 	<!-- To add an external script file, script tag is used with src attribute containing the path of the script that we would like to include in this document -->
-	<script type="text/javascript" src="scripts/form_validation.js"></script>
+	<script type="text/javascript" src="js/scripts.js"></script>
 </body>
 
 <footer clearfix id="footer" class="desktop-footer">

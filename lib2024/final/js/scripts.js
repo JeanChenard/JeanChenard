@@ -51,6 +51,7 @@ function init() {}
    		 		$("#results").addClass('reveal');
    		 });
 	});
+
 }
 
 // to show the form values in the results div which takes the argument "form"
