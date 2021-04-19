@@ -117,7 +117,7 @@ h2, h3, p, li, th,td, label {
 		/*this is used to create a pointer for element*/
 		cursor: pointer;
 	}
-/
+
 	.ham, .ham:before, .ham:after {
 		width: 30px;
 		border-top: 5px solid black;
@@ -162,6 +162,8 @@ h2, h3, p, li, th,td, label {
 
  body{
   background-image: url("../img/white-waves.png");
+  max-width: 1024px;
+  margin: 0 auto;
 }
 
 h2, th {
@@ -196,7 +198,7 @@ tr:nth-child(even) {
   background-color: #FFF;
 }
 
-#main-form {
+#main-form form {
 	box-sizing: border-box;
 	width: 25%;
 	float: left;
@@ -209,7 +211,7 @@ label {
 
  #results {
 	box-sizing: border-box;
-	width: 25%;
+	width: 50%;
 	border: 10px black;
 	padding: 10px;
 	box-shadow: 3px 5px 10px rgba(0,0,0,0.5);
