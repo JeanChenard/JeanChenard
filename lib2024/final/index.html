@@ -33,7 +33,6 @@
 		 <div class="logo"></div>
 			<h1 class="page-title">MY LOGO</h1>
 				<nav class="main-nav-container desktop-nav">
-						<nav class="main-nav-container">
 					<ul class="main-nav clearfix">
 					<li><a href="home.html">HOME</a></li>
 					<li><a href="about.html">ABOUT</a></li>
@@ -54,6 +53,7 @@
 						<li><a href="contact.html">CONTACT</a></li>
 					</ul>
 			</nav> 
+		</div>
 		</header>
 
 		<section id="main-paragraph" class="main-section clearfix"> 
@@ -133,8 +133,8 @@
 					<label for="email">Email</label>
 					<input type="email" required name="email" id="email" placeholder="example@gmail.com">
 				</div>
-				<div id="adress-container" class="form-elm">
-						<label for="adress">Address</label>
+				<div id="address-container" class="form-elm">
+						<label for="address">Address</label>
 						<input type="text" required name="address" id="address"  placeholder="Enter your Address here">
 					</div>
 					<div id="city-container" class="form-elm">
@@ -146,7 +146,7 @@
 					<!-- select element is used to create dropdowns in HTML. -->
 						<!-- select comes paired with option. -->
 						<!-- The value of the selected option gets submitted to the server. -->
-			<select type="drop-container" required name="province" id="province">
+			<select name="province" id="province">
 				<option value="ON" selected>Ontario</option>
 					 	<!-- selected means this option will be chosen as default. -->
 					 	<option value="QC">Québec</option>
@@ -200,7 +200,6 @@
 	<!-- script tag is not a self closing tag so it requires </script> to close itself -->
 	<!-- To add an external script file, script tag is used with src attribute containing the path of the script that we would like to include in this document -->
 	<script type="text/javascript" src="js/scripts.js"></script>
-</body>
 
 <footer clearfix id="footer" class="desktop-footer">
 	<section id="section-1" class="footer-section">
@@ -243,4 +242,5 @@
 
 	</section>
 </footer>
+</body>
 </html>
