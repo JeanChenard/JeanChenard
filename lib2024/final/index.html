@@ -33,7 +33,7 @@
 		 <div class="logo"></div>
 			<h1 class="page-title">MY LOGO</h1>
 				<nav class="main-nav-container desktop-nav">
-						<nav class="main-nav-container mobile-nav">
+						<nav class="main-nav-container">
 					<ul class="main-nav clearfix">
 					<li><a href="home.html">HOME</a></li>
 					<li><a href="about.html">ABOUT</a></li>
@@ -45,7 +45,7 @@
 				<div class="ham"></div> 
 				<!-- mobile navigation start -->
  		<div class="mobile-nav-container"> 
-			 <ul class="main-nav">
+			 <nav class="main-nav">
 				<ul class="main-nav clearfix">
 						<li><a href="home.html">HOME</a></li>
 						<li><a href="about.html">ABOUT</a></li>
@@ -56,8 +56,8 @@
 			</nav> 
 		</header>
 
-		<section id="main-paragraph" class="main-section"> 
-		<article class="main clearfix">
+		<section id="main-paragraph" class="main-section clearfix"> 
+		<article class="main">
 
 			<h2>ABOUT</h2>
 
@@ -66,16 +66,15 @@
 <p>Metus laoreet ultricies taciti luctus. Praesent, molestie tempor mus est taciti! Sem consectetur vel senectus montes malesuada senectus? Litora tellus aptent libero elit malesuada sagittis. Feugiat cras felis facilisis ante mattis orci elementum dui vitae amet. In sem iaculis amet elit nam? Libero magna donec magnis vivamus? At cum dictum enim pellentesque dapibus dignissim commodo scelerisque pharetra phasellus ligula enim. Netus senectus, nec litora. Magna quisque purus, mauris bibendum dictumst maecenas volutpat. Elit id ac tellus dictumst. Morbi odio molestie gravida nullam curae; consequat suspendisse et quam. Vestibulum posuere lacus blandit praesent dictumst et rhoncus nibh in fames habitasse pharetra. Dictum laoreet vitae commodo ad. Tristique!Morbi ultrices posuere massa aenean cum libero convallis per platea. Maecenas morbi auctor mus viverra neque viverra senectus scelerisque placerat. Elit id ac tellus dictumst. Morbi odio molestie gravida nullam curae; consequat suspendisse et quam. Vestibulum posuere lacus blandit praesent dictumst et rhoncus nibh in fames habitasse pharetra.  
 </p>
 </article>
-<aside class="col-main-site-sidebar clearfix">
+<aside class="col-main-site-sidebar">
 <img src="img/pexels-couleur-2302908.png" alt="Lotus Photo">
 </aside>
 </section>
 
-<section id="main-table" class="main-section">
-<table border="1">
-
+	<section id="main-table" class="main-section clearfix">
 	<h2>SCHEDULE</h2>
 	
+<table> 
 	<thead>
 	<tr>
 		<th>TIME</th>
@@ -130,23 +129,19 @@
 					<label for="name">Name</label>
 					<input type="text" required name="name" id="name" placeholder="Insert Name here">
 					</div>
-
 					<div id="email-container" class="form-elm">
 					<label for="email">Email</label>
 					<input type="email" required name="email" id="email" placeholder="example@gmail.com">
 				</div>
-
 				<div id="adress-container" class="form-elm">
 						<label for="adress">Address</label>
 						<input type="text" required name="address" id="address"  placeholder="Enter your Address here">
 					</div>
-
 					<div id="city-container" class="form-elm">
 					<label for="city">City</label>
 					<input type="text" required name="city" id="city"  placeholder="Enter the name of your city here">
 				</div>
-
-					<div id="province-drop-container" class="form-elm">
+				<div id="province-drop-container" class="form-elm">
 					<label for="province">Province/Territory</label>
 					<!-- select element is used to create dropdowns in HTML. -->
 						<!-- select comes paired with option. -->
@@ -168,13 +163,11 @@
 					 	<option value="YT">Yukon</option>
 					 </select>
 					</div>
-
 					<div id="postal-code-container" class="form-elm">
 						<label for="postal-code">Postal Code</label>
 						<input type="text" required="" pattern="[A-Za-z][0-9][A-Za-z] [0-9][A-Za-z][0-9]" value=""
 						name="postal-code" id="postal-code" placeholder="A0A 0A0"></div>
-
-					<button type="submit">Submit</button>
+						<button type="submit">Submit</button>
 					</form>
 				
 <div id="results" class="profile">
