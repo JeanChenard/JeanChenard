@@ -61,7 +61,7 @@ table {
 ************************/
 
 /*Make sure major containers in your HTML file are set to 100% width to achieve Fluid Layout */
-.col-main, .col-footer, img {
+.col-header, .col-main, .col-footer, img {
 	width:100%;
 }
 
@@ -74,7 +74,6 @@ header {
 	h1 {
 	float: left;
 	width: 33%;
-	width: calc(100% -120px);
 	font-size: 26px;
 	box-sizing: border-box;
 	padding: 20px;
@@ -83,17 +82,24 @@ header {
 	color: teal;
 }
 
-nav {
+.desktop-nav {
     background-color: #72a9ae;
-    width: 100%;
     float: left;
+    width: 100%;
 }
 
 
-nav li { 
+.desktop-nav li { 
 	font-size: 11px;
-	width: 25%;
+	width: 15%;
+	float: left;
+	padding: 10px;
+    box-sizing: border-box;
  }
+
+ body{
+  background-image: url("../img/white-waves.png");
+}
 
 h2, th {
 	color: teal;
@@ -107,15 +113,34 @@ aside{
   width: 35%;
   padding-left: 5px;
   float: right;
+  box-sizing: border-box;
 }
 
 table {
-	float: center;
 	width: 100%;
 }
 
-td {
+th {
+	background-color: #FFF;
+}
 
+tr:nth-child(odd) {
+  background-color: #dddddd;
+}
+
+tr:nth-child(even) {
+  background-color: #FFF;
+}
+
+div #results {
+	box-sizing: border-box;
+	width: 50%;
+	border: 10px black;
+	margin: 15px
+	padding: 10px;
+	box-shadow: 3px 5px 10px rgba(0,0,0,0.5);
+	cursor: pointer;
+	float: right;
 }
 
 
@@ -128,34 +153,58 @@ footer {
 
 #section-1 {
 	width:33%;
+	padding: 10px;
+    box-sizing: border-box;
+    font-size: 11px;
+    float: left;
 }
 
 #section-2 {
-	width: 33%;
+	width: 33%;		
+	padding: 10px;
+    box-sizing: border-box;
+    font-size: 11px;
+    float: right;
 }
 
 #section-3 {
 	width: 33%;
+	padding: 10px;
+    box-sizing: border-box;
+    font-size: 11px;
+    float: right;
 }
-/*.fa { 
-  float: right;
-  padding: 20px;
+
+.fa {
+  padding: 10px;
   font-size: 30px;
-  width: 33%;
+  width: 30px;
   text-align: center;
   text-decoration: none;
   border-radius: 50%;
 }
-*/
+
 .fa-facebook {
   background: #3B5998;
-  color:  #7cc576;
+  color: white;
 }
-.fa-twitter {
+
+.fa-twitter-square {
   background: #55ACEE;
-  color: #7cc576;
- }
- .fa-youtube {
- 	 background: #bb0000;
- 	 color: #7cc576;
- }
+  color: white;
+}
+
+.fa-youtube {
+  background: #bb0000;
+  color: white;
+}
+
+/*Desktop First Media Query*/
+/* this is in case you have a lot of complex styles for desktop and do not want to change the styles for desktop layout*/
+/*These media queries will target the screen sizes for smaller devices*/
+/*The following media query targets the screen sizes that are less than 768px*/
+@media only screen and (max-width: 768px) {
+	footer {
+		background: #FFEB3B;
+	}
+}
