@@ -68,7 +68,14 @@ function showformValues(form){
 		// 1) $("#results") -- (Gets the  selects the div with id results 
 		// 2) .fund("#"+field.name+"_result") -- finds the element with id equal to the name of the field being accessed along with text ("_result") Eg : name, pc_result, email_result
 		// 3) Modifies the text inside the selected element and replaces it with the value of this field   
-		$("#results").find("#"+field.name+"_result").text(field.value);
+		// $("#results").find("#"+field.name+"_result").text(field.value);
+		 $("#profile-info").find("#name_result").text(formValues[0].value);
+		 $("#profile-info").find("#address_result").text(formValues[0].value);
+		 $("#profile-info").find("#city_result").text(formValues[0].value);
+		 $("#profile-info").find("#province_result").text(formValues[0].value);
+		 $("#profile-info").find("#postal-code_result").text(formValues[0].value);
+		      
+
 
 		// special check for email to add a link instead of just string
 		if(field.name=="email"){

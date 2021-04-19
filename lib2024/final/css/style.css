@@ -110,7 +110,6 @@ h2, h3, p, li, th,td, label {
 }
 
 .ham {
-		height: 15px;
 		margin:15px;
 		padding-top: 5px;
 		position: relative;
@@ -285,7 +284,79 @@ footer {
   color: white;
 }
 
-/*Loader*/
+
+
+/*Desktop First Media Query*/
+/* this is in case you have a lot of complex styles for desktop and do not want to change the styles for desktop layout*/
+/*These media queries will target the screen sizes for smaller devices*/
+/*The following media query targets the screen sizes that are less than 768px*/
+@media only screen and (max-width: 768px) {
+	footer {
+		background: #FFEB3B;
+	}
+}
+/*This media query will only target the tablet size*/
+@media only screen and (min-width: 480px) and (max-width: 768px) {
+	header {
+		background: #FFEB3B;
+	}
+}
+
+/*This media query targets, tablet and above*/
+@media only screen and (min-width: 768px) {
+	
+	/*header styles*/
+
+	/*the following css is used to restrict the content beyond 1280px*/
+	/*This is to make sure the main content is in the readbable area for large screen sizes*/
+	header, main, footer {
+
+		max-width: 1280px;
+		margin: 0 auto;
+
+	}
+/*
+	.desktop-nav {
+		display: block;
+	}
+
+	.mobile-nav-container {
+		display: none;
+	}
+	.mobile-nav {
+		display: none;
+	}
+
+	.ham {
+		display: none;
+		height: 15px;
+		margin:15px;
+		padding-top: 5px;
+		position: relative;
+		float: right;
+		cursor: pointer;
+	}
+
+	.ham, .ham:before, .ham:after {
+		width: 30px;
+		border-top: 5px solid black;
+	}
+
+	.ham:before {
+		content: "";
+		display:block;
+		position: absolute;
+		background: black;
+	}
+
+	.ham:after {
+		content: "";
+		display: block;
+		background: black;
+		position: absolute;
+		bottom: 0;
+	}*/
+	/*Loader*/
 
 .overlay-container {
 	display: none;
@@ -377,15 +448,5 @@ footer {
 	}
 	100% {
 		border-radius: 50%;
-	}
-}
-
-/*Desktop First Media Query*/
-/* this is in case you have a lot of complex styles for desktop and do not want to change the styles for desktop layout*/
-/*These media queries will target the screen sizes for smaller devices*/
-/*The following media query targets the screen sizes that are less than 768px*/
-@media only screen and (max-width: 768px) {
-	footer {
-		background: #FFEB3B;
 	}
 }
